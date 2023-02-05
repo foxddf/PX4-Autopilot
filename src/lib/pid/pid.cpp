@@ -76,7 +76,7 @@ __EXPORT int pid_set_parameters(PID_t *pid, float kp, float ki, float kd, float 
 		pid->kp = kp;
 
 	} else {
-		ret = 1;
+		ret = 0;
 	}
 
 	if (PX4_ISFINITE(ki)) {
